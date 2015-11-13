@@ -11,6 +11,7 @@ Rails.application.routes.draw do
      collection do
        get 'hippo'
        get 'german'
+       get 'translation'
       end
    end
 
