@@ -11,9 +11,9 @@
     = f.text_area :body, class: 'form-control'
   .field
     = label_tag 'German'
-    = f.radio_button :language, id: 'german', label: 'German'
+    = f.radio_button :language, :german
   .field
     = label_tag 'Hippo'
-    = f.radio_button :language, id: 'hippo'
+    = f.radio_button :language, :hippo
   .actions
     = f.submit 'Save', class: 'btn btn-sm'

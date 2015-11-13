@@ -1,17 +1,20 @@
 .container
   %div.header
-    %h1.text-center LOGO HERE
+    %h1.text-center Hippo Haus
   .middle-body
     .row
       %p#notice= notice 
     .row
       .col-md-6
-        %h3 In #{@request.language}, '#{@request.body}' will be:
+        %h3 In #{@request.language.camelize}, '#{@request.body}' will be:
 
         .speech-bubble
-          %p Blah blah blah
+          %h4 "blah blah blah"
 
       .col-md-6
         %img#hippo(src="https://d13yacurqjgara.cloudfront.net/users/63485/screenshots/489021/dribbble_shot3.gif")
+
+      -if @request.language == 'hippo'
+        = audio_tag("http://www.freeinfosociety.com/media/sounds/310.mp3")
 
     = link_to 'Back', root_path
