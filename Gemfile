@@ -1,6 +1,6 @@
 #ruby-gemset=hippo.haus
 source 'https://rubygems.org'
-ruby "2.2.3"
+ruby "2.2.0"
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -27,6 +27,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'google-translate'
 gem 'haml-rails'
+
+gem "therubyracer"
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem "twitter-bootstrap-rails"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
