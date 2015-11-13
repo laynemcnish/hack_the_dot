@@ -21,3 +21,32 @@ body {
 .middle-body {
   margin-top: 150px;
 }
+
+input[type='radio'] {
+  margin-left: 10px;
+}
+
+.speech-bubble {
+  position: relative;
+  margin-top: 20px;
+  width: 350px;
+  height: 220px;
+  padding: 10px;
+  background: #FFFFFF;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.speech-bubble:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 0 15px 15px;
+  border-color: transparent #FFFFFF;
+  display: block;
+  width: 0;
+  z-index: 1;
+  right: -15px;
+  top: 33px;
+}

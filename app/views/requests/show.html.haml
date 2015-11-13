@@ -1,10 +1,17 @@
-%p#notice= notice
+.container
+  %div.header
+    %h1.text-center LOGO HERE
+  .middle-body
+    .row
+      %p#notice= notice 
+    .row
+      .col-md-6
+        %h3 In #{@request.language}, '#{@request.body}' will be:
 
-%p
-  %b Body:
-  = @request.body
-%p
-  %b Language:
-  = @request.language
+        .speech-bubble
+          %p Blah blah blah
 
-= link_to 'Back', root_path
+      .col-md-6
+        %img#hippo(src="https://d13yacurqjgara.cloudfront.net/users/63485/screenshots/489021/dribbble_shot3.gif")
+
+    = link_to 'Back', root_path

@@ -10,7 +10,10 @@
     = f.label :body
     = f.text_area :body, class: 'form-control'
   .field
-    = f.label :language
-    = f.text_field :language, class: 'form-control'
+    = label_tag 'German'
+    = f.radio_button :language, id: 'german', label: 'German'
+  .field
+    = label_tag 'Hippo'
+    = f.radio_button :language, id: 'hippo'
   .actions
     = f.submit 'Save', class: 'btn btn-sm'
