@@ -26,7 +26,7 @@ class Request < ActiveRecord::Base
                     end
                   end
                   .inject do |a, e|
-                    a += " " if a !~ /[a-zA-Z0-9]\z/ && e =~ /[a-zA-Z0-9]\z/
+                    a += " " if e =~ /["a-zA-Z0-9]\z/
                     a += e
                   end
   end
