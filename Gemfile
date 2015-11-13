@@ -28,6 +28,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'google-translate', require: "google_translate"
 gem 'tokenizer'
+gem 'l33tify'
 gem 'haml-rails'
 
 gem "therubyracer"

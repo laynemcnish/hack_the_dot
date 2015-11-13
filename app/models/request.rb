@@ -22,7 +22,7 @@ class Request < ActiveRecord::Base
                       # Punctuation or something.
                       word
                     else
-                      word.upcase.reverse
+                      L33tify.process(word).reverse
                     end
                   end
                   .inject do |a, e|
