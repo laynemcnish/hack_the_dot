@@ -12,9 +12,8 @@
           %h4 "blah blah blah"
 
       .col-md-6
-        %img#hippo(src="https://d13yacurqjgara.cloudfront.net/users/63485/screenshots/489021/dribbble_shot3.gif")
-
-      -if @request.language == 'hippo'
-        = audio_tag("http://www.freeinfosociety.com/media/sounds/310.mp3")
+        #hippo
+          - images = [ 'hippo-no.gif', 'hippo-regular.gif', 'hippo-yes.gif', 'hippo-winner.gif' ]
+          = image_tag("#{images.sample}")
 
     = link_to 'Back', root_path
