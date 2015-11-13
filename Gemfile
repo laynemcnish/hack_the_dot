@@ -1,6 +1,7 @@
+#ruby=2.2.3
 #ruby-gemset=hippo.haus
 source 'https://rubygems.org'
-ruby "2.2.0"
+# ruby "2.2.0"
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -26,6 +27,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'google-translate', require: "google_translate"
+gem 'tokenizer'
 gem 'haml-rails'
 
 gem "therubyracer"

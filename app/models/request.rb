@@ -13,7 +13,22 @@ class Request < ActiveRecord::Base
   end
 
   def hippoize
-    self.result = "MRAWR!"
+    tokenizer = Tokenizer::Tokenizer.new(:en)
+    tokenizer.tokenize(self.body)
+    self.result = tokenizer
+                  .tokenize(self.body)
+                  .map do |word|
+                    if word !~ /[a-z0-9]/
+                      # Punctuation or something.
+                      word
+                    else
+                      word.upcase.reverse
+                    end
+                  end
+                  .inject do |a, e|
+                    a += " " if a !~ /[a-zA-Z0-9]\z/ && e =~ /[a-zA-Z0-9]\z/
+                    a += e
+                  end
   end
 
   before_create :translate
