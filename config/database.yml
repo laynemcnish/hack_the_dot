@@ -66,3 +66,4 @@ production:
   <<: *default
   database: hack_the_dot_production
   username: hack_the_dot
+  password: <%= ENV['HACK_THE_DOT_DATABASE_PASSWORD'] %>
