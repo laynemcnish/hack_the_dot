@@ -7,9 +7,9 @@
           %li= msg
 
   .field
-    = f.label :body
+    = f.label "Text to Translate:"
     = f.text_area :body, class: 'form-control'
   .field
     = f.hidden_field :language, value: 'hp'
   .actions
-    = f.submit 'Save', class: 'btn btn-sm'
+    = f.submit 'Translate', class: 'btn btn-sm'
