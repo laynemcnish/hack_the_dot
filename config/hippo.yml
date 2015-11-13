@@ -1,0 +1,53 @@
+---
+anchors:
+  the: TEH
+  be: BEEEEEE
+  to: TU
+  of: UV
+  and: UND
+  a: AH
+  in: EEEN
+  that: TAHT
+  have: HEV
+others:
+- foo
+- bar
+- baz
+- blah
+# chains:
+#   TEH:
+#   - foo
+#   - bar
+#   - baz
+#   BEEEEEE:
+#   - bar
+#   - baz
+#   - blah
+#   TU:
+#   - baz
+#   - blah
+#   - foo
+#   UV:
+#   - blah
+#   - foo
+#   - bar
+#   UND:
+#   - TEH
+#   - AH
+#   - EEEN
+#   AH:
+#   -
+#   EEEN:
+#   -
+#   TAHT:
+#   -
+#   HEV:
+#   -
+#   foo:
+#   -
+#   bar:
+#   -
+#   baz:
+#   -
+#   blah:
+#   -
